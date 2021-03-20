@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма опросника</title>
+    <link rel="icon" href="936113050.png" type="image/x-icon">
+</head>
+
+<body>
+    <Section>
+        <h1>Форма опросника для сбора конфиденцильной информации</h1>
+        <form id="formareg" enctype="multipart/form-data" action="#" method="#">
+            <fieldset>
+                <legend><h3>Введите ваши данные</h3></legend>
+                <div>
+                    <label>
+                    Дата рождения:<input type="date" name="bday" id="bbay" min="01/01/1900" max="31/12/2100">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="text" name="surname" id="surname" placeholder="Фамилия">
+                    </label>
+                    <label>
+                        <input type="text" name="name" id="name" placeholder="Имя">
+                    </label>
+                    <label>
+                        <input type="otch" name="fio" id="otch" placeholder="Отчество">
+                    </label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend><h3>Ваше образование</h3></legend>
+                <div>
+                    <label>
+                    Наименование вуза:<select>
+                        <option value="SPBGEU">СПБГЭУ</option>
+                        <option value="HSE">НИУ ВШЭ</option>
+                        <option value="SPBU">СПБГУ</option>
+                        <option value="ITMO">ИТМО</option>
+                        <option value="MGIMO">МГИМО</option>
+                        <option value="MGU">МГУ Ломоносова</option>
+                        <option value="BAUMAN">МГТУ Баумана</option>
+                        <option value="GUBKINA">Губкина</option>
+                        <option value="LESGAFT">Лесгафта</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Год окончания<input type="number" min="1999" max="2021">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>Ваш опыт работы</h3></legend>
+                <div>
+                    <label><value>Название вашей компании<input type="text"></value></label></div>
+                <div><label><value>Должность<input type="text"></value></label></div>
+                <div>
+                <value><input type="radio" name="opyt" value="нет опыта">Нет опыта</value>
+                <value><input type="radio" name="opyt" value="1-3 года">1-3 года</value>
+                <value><input type="radio" name="opyt" value="3-6 лет">3-6 лет</value>
+                <value><input type="radio" name="opyt" value="более 6 лет">Более 6 лет</value>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>Дополнительная информация</h3></legend>
+                <label for="datas">Загрузите резюме
+                    <input id="datas" type="file" name="datas" multiple>
+                </label>
+                <div>
+                <label for="ssylka">
+                    <input id="ssylka" type="url" name="ssylka">Адрес вашей страницы в соцсетях
+                </label>
+                </div>
+            </fieldset>
+
+        </form>
+        <div>
+            <label for="submit">
+                <button form="formareg" type="submit" id="submit">Отправить данные</button>
+            </label>
+            <label for="reset">
+                <button form="formareg" type="reset" id="reset">Очистить</button>
+            </label>
+        </div>
+    </Section>
+</body>
+
+</html>
